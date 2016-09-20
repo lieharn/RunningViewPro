@@ -1,5 +1,9 @@
 <strings>
     <string id="AppName">RunningViewPro</string>
 
-    <string id="label">My Value</string>
+    <string id="headerAvgPace">AVG PACE</string>
+    <string id="headerHr">HR</string>
+    <string id="headerPace">PACE</string>
+    <string id="headerDist">DISTANCE</string>
+    <string id="headerTimer">TIMER</string>
 </strings>
