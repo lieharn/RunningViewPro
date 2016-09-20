@@ -75,6 +75,10 @@ class RunningViewProView extends Ui.DataField {
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
       
+        
+        //grid
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawLine(0, 104, dc.getWidth(), 104);
     }
 
 }
