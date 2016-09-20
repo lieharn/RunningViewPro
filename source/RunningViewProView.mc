@@ -3,6 +3,10 @@ using Toybox.Graphics as Gfx;
 
 class RunningViewProView extends Ui.DataField {
 
+    hidden const CENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
+    hidden const HEADER_FONT = Graphics.FONT_XTINY;
+
+
     hidden var mValue;
 
     function initialize() {
@@ -75,10 +79,15 @@ class RunningViewProView extends Ui.DataField {
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
       
+      	dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+      	dc.drawText(57, 160, Graphics.FONT_MEDIUM, "geheim", Graphics.TEXT_JUSTIFY_CENTER);
         
         //grid
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawLine(0, 104, dc.getWidth(), 104);
+        dc.drawLine(0, 30, dc.getWidth(), 30);
+        dc.drawLine(0, 130, dc.getWidth(), 130);        
+        dc.drawLine(0, 190, dc.getWidth(), 190);
+        dc.drawLine(109, 130, 109, 190);
     }
 
 }
